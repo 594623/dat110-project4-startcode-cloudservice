@@ -64,7 +64,7 @@ public class App {
 		
 		get("/accessdevice/code", (req, res) -> gson.toJson(accesscode));
 		
-		delete("/accessdevice/code", (req, res) -> {
+		delete("/accessdevice/log", (req, res) -> {
 			accesslog.clear();
 			return gson.toJson(accesslog);
 		});
